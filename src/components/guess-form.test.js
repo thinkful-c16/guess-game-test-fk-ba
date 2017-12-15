@@ -1,7 +1,7 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import Config from './test-config';
-import GuessForm from './components/guess-form.test';
+import Config from './testConfig';
+import GuessForm from './guess-form';
 import {mount} from 'enzyme';
 
 describe('<GuessForm/>', () => {
