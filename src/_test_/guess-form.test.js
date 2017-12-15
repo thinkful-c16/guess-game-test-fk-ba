@@ -1,7 +1,7 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import Config from './test-config.js'
-import GuessForm from './guess-form.js'
+import Config from './test-config';
+import GuessForm from './components/guess-form.test';
 import {mount} from 'enzyme';
 
 describe('<GuessForm/>', () => {
@@ -19,5 +19,4 @@ describe('<GuessForm/>', () => {
         component.find('form').simulate('submit');
         expect(callback).toHaveBeenCalledWith(value);
     })
-
 });
